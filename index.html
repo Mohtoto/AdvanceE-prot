@@ -19,7 +19,7 @@
 </head>
     <body>
 
-        <section id="landing-page">
+        <section id="landing-page" onmousemove="moveBackground(event)">
 
             <nav>
                 <figure>
@@ -27,8 +27,8 @@
                 </figure>
 
                 <ul class="nav__link--list">
-                        <li class="nav__link">
-                            <a href="" class="
+                        <li class="nav__link" onclick="togglemodal()">
+                            <a href="#" class="
                             nav__link--anchor
                             link__hover-effect
                             link__hover-effect--black
@@ -52,7 +52,7 @@
                                 ">Contact</a>
                             </li>
                                 <li class="nav__link click" onclick="toggleContrast()">
-                                    <a href="" class="
+                                    <a href="#" class="
                                     nav__link--anchor
                                     link__hover-effect
                                     link__hover-effect--black
@@ -86,10 +86,12 @@
 
             </header>
 
-            <button class="mail__btn click " onclick="togglemodal()">
+            <a href="#">
+                <button class="mail__btn click " onclick="togglemodal()">
 
-                <i class="fas fa-envelope"></i>
-            </button>
+                    <i class="fas fa-envelope"></i>
+                </button>
+            </a>
 
             <a href="#projects" class="scroll">
                 <div class="scroll__icon click"></div>
@@ -184,7 +186,16 @@
                 
             </div>
 
-
+            <img src="./images/semi circle.svg"  class="shape shape--0">
+            <img src="./images/circle.svg"  class="shape shape--1">
+            <img src="./images/squiggly.svg"  class="shape shape--2">
+            <img src="./images/circle.svg"  class="shape shape--3">
+            <img src="./images/triangle.svg"  class="shape shape--4">
+            <img src="./images/circle.svg"  class="shape shape--5">
+            <img src="./images/squiggly.svg"  class="shape shape--6">
+            <img src="./images/circle.svg"  class="shape shape--7">
+            <img src="./images/semi circle.svg"  class="shape shape--8">
+            
         </section>
 
         <section id="projects">
@@ -331,7 +342,7 @@
 
 
                         
-                                <a href="" class="footer__social--link 
+                                <a href="#" onclick="togglemodal()" class="footer__social--link 
                                 link__hover-effect
                                 link__hover-effect--white">
 

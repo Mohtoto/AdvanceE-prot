@@ -1,29 +1,43 @@
-// template_zli1zqy
-
-//service_i0xbahq
-
-
-//Rh-MX_dV27KSl5AiW
-
-
 let contrastToggle = false ;
 
 let isModalOpen = false ;
+const scaleFactor = 1 /20
+
+
+function moveBackground(event){
+
+    const shapes = document.querySelectorAll(".shape")
+    const x = event.clientX * scaleFactor;
+    const y = event.clientY * scaleFactor;
+
+
+
+    for(let i = 0 ; i < shapes.length ; ++i){
+        const isOdd = i % 2 !==0;
+        const boolInt = isOdd ? -1:1;
+        shapes[i].style.transform = `translate(${x * boolInt}px ,${y * boolInt}px)`
+    }
+} 
+
+
+
+
+
+
+
+
+
+
 
 function toggleContrast() {
-    contrastToggle = !contrastToggle; 
-    if(contrastToggle){
-
-        document.body.classList += " dark-theme"
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+      document.body.classList += " dark-theme"
     }
-    
     else {
-
-        document.body.classList.remove("dark-theme")
+      document.body.classList.remove("dark-theme")
     }
-
-}
-
+  }
 
 function contact(event){
     event.preventDefault();
