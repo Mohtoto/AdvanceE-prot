@@ -98,7 +98,7 @@ textarea{
 
 .navy{
 
-    color:   #004e92 !important;
+    color:   #CA1657 !important;
     
 }
 
@@ -248,7 +248,7 @@ nav,
 }
 
 
-dark-theme .link__hover-effect--white::after{
+.dark-theme .link__hover-effect--white::after{
 
     background-color:#242424;
  }
@@ -427,7 +427,7 @@ nav{
 .social__linkk{
 
     
-    background-color:  #004e92;
+    background-color:  #CA1657;
     color: #fff;
     padding: 6px;
     width: 32px;
